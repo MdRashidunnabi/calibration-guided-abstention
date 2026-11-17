@@ -1,0 +1,290 @@
+{
+  "retrieval": {
+    "test_A2G": {
+      "queries": 1071,
+      "counted": 1071,
+      "skipped_no_positive": 0,
+      "rank1": 0.680672268907563,
+      "rank5": 0.776844070961718,
+      "mAP": 0.5452316287123299
+    },
+    "test_G2A": {
+      "queries": 962,
+      "counted": 962,
+      "skipped_no_positive": 0,
+      "rank1": 0.6746361746361746,
+      "rank5": 0.7817047817047817,
+      "mAP": 0.5606733471802019
+    }
+  },
+  "abstention": {
+    "confidence": {
+      "n": 454,
+      "base_accuracy": 0.7224669603524229,
+      "ece": 0.046658625349862794,
+      "brier": 0.16112475604932658,
+      "aurc": 0.1434959308651274
+    },
+    "calibration_fit_check": {
+      "n": 440,
+      "base_accuracy": 0.6681818181818182,
+      "ece": 0.05532223977195102,
+      "brier": 0.16642773295861243,
+      "aurc": 0.1397502188872914
+    },
+    "test_probability": {
+      "n": 2033,
+      "base_accuracy": 0.677816035415642,
+      "ece": 0.07884720793304542,
+      "brier": 0.15602478619970164,
+      "aurc": 0.11305247762479004
+    },
+    "variants": {
+      "E1_max_similarity": {
+        "directions": {
+          "test_A2G": {
+            "base_accuracy": 0.680672268907563,
+            "n": 1071,
+            "aurc": 0.1141211332722756
+          },
+          "test_G2A": {
+            "base_accuracy": 0.6746361746361746,
+            "n": 962,
+            "aurc": 0.1458710346730568
+          }
+        },
+        "alphas": {
+          "0.01": {
+            "empirical": {
+              "threshold": 0.7960618650913237,
+              "coverage": 0.0054107230693556324,
+              "accepted": 11,
+              "errors": 0,
+              "selective_risk": 0.0,
+              "selective_accuracy": 1.0
+            },
+            "risk_upper": null
+          },
+          "0.05": {
+            "empirical": {
+              "threshold": 0.6218850016593933,
+              "coverage": 0.22577471716674866,
+              "accepted": 459,
+              "errors": 18,
+              "selective_risk": 0.0392156862745098,
+              "selective_accuracy": 0.9607843137254902
+            },
+            "risk_upper": null
+          },
+          "0.1": {
+            "empirical": {
+              "threshold": 0.5273909366130829,
+              "coverage": 0.5086079685194295,
+              "accepted": 1034,
+              "errors": 113,
+              "selective_risk": 0.109284332688588,
+              "selective_accuracy": 0.8907156673114119
+            },
+            "risk_upper": null
+          }
+        }
+      },
+      "E2_margin": {
+        "directions": {
+          "test_A2G": {
+            "base_accuracy": 0.680672268907563,
+            "n": 1071,
+            "aurc": 0.10676501966889108
+          },
+          "test_G2A": {
+            "base_accuracy": 0.6746361746361746,
+            "n": 962,
+            "aurc": 0.10523592411486227
+          }
+        },
+        "alphas": {
+          "0.01": {
+            "empirical": {
+              "threshold": 0.24942206859588623,
+              "coverage": 0.034923757993113626,
+              "accepted": 71,
+              "errors": 0,
+              "selective_risk": 0.0,
+              "selective_accuracy": 1.0
+            },
+            "risk_upper": null
+          },
+          "0.05": {
+            "empirical": {
+              "threshold": 0.14416434109210974,
+              "coverage": 0.22577471716674866,
+              "accepted": 459,
+              "errors": 3,
+              "selective_risk": 0.006535947712418301,
+              "selective_accuracy": 0.9934640522875817
+            },
+            "risk_upper": null
+          },
+          "0.1": {
+            "empirical": {
+              "threshold": 0.09598443418741226,
+              "coverage": 0.39596655189375307,
+              "accepted": 805,
+              "errors": 25,
+              "selective_risk": 0.031055900621118012,
+              "selective_accuracy": 0.968944099378882
+            },
+            "risk_upper": null
+          }
+        }
+      },
+      "E3_quality_logistic": {
+        "directions": {
+          "test_A2G": {
+            "base_accuracy": 0.680672268907563,
+            "n": 1071,
+            "aurc": 0.3074421889555017
+          },
+          "test_G2A": {
+            "base_accuracy": 0.6746361746361746,
+            "n": 962,
+            "aurc": 0.33581822385880283
+          }
+        },
+        "alphas": {
+          "0.01": {
+            "empirical": {
+              "threshold": 0.807122685476786,
+              "coverage": 0.03689129365469749,
+              "accepted": 75,
+              "errors": 33,
+              "selective_risk": 0.44,
+              "selective_accuracy": 0.56
+            },
+            "risk_upper": null
+          },
+          "0.05": {
+            "empirical": {
+              "threshold": 0.807122685476786,
+              "coverage": 0.03689129365469749,
+              "accepted": 75,
+              "errors": 33,
+              "selective_risk": 0.44,
+              "selective_accuracy": 0.56
+            },
+            "risk_upper": null
+          },
+          "0.1": {
+            "empirical": {
+              "threshold": 0.7996152614533214,
+              "coverage": 0.056074766355140186,
+              "accepted": 114,
+              "errors": 43,
+              "selective_risk": 0.37719298245614036,
+              "selective_accuracy": 0.6228070175438597
+            },
+            "risk_upper": null
+          }
+        }
+      },
+      "E4_unweighted_fusion": {
+        "directions": {
+          "test_A2G": {
+            "base_accuracy": 0.680672268907563,
+            "n": 1071,
+            "aurc": 0.09875435669514664
+          },
+          "test_G2A": {
+            "base_accuracy": 0.6746361746361746,
+            "n": 962,
+            "aurc": 0.12716815333502637
+          }
+        },
+        "alphas": {
+          "0.01": {
+            "empirical": {
+              "threshold": 0.8370570794908706,
+              "coverage": 0.05017215937038859,
+              "accepted": 102,
+              "errors": 0,
+              "selective_risk": 0.0,
+              "selective_accuracy": 1.0
+            },
+            "risk_upper": null
+          },
+          "0.05": {
+            "empirical": {
+              "threshold": 0.2663423610023736,
+              "coverage": 0.21790457452041317,
+              "accepted": 443,
+              "errors": 2,
+              "selective_risk": 0.004514672686230248,
+              "selective_accuracy": 0.9954853273137697
+            },
+            "risk_upper": null
+          },
+          "0.1": {
+            "empirical": {
+              "threshold": -0.15376530077169462,
+              "coverage": 0.4397442203639941,
+              "accepted": 894,
+              "errors": 60,
+              "selective_risk": 0.06711409395973154,
+              "selective_accuracy": 0.9328859060402684
+            },
+            "risk_upper": null
+          }
+        }
+      },
+      "E5_learned_fusion": {
+        "directions": {
+          "test_A2G": {
+            "base_accuracy": 0.680672268907563,
+            "n": 1071,
+            "aurc": 0.10581358709364214
+          },
+          "test_G2A": {
+            "base_accuracy": 0.6746361746361746,
+            "n": 962,
+            "aurc": 0.11962881837471417
+          }
+        },
+        "alphas": {
+          "0.01": {
+            "empirical": {
+              "threshold": 0.9315950586265425,
+              "coverage": 0.13182488932611905,
+              "accepted": 268,
+              "errors": 1,
+              "selective_risk": 0.0037313432835820895,
+              "selective_accuracy": 0.996268656716418
+            },
+            "risk_upper": null
+          },
+          "0.05": {
+            "empirical": {
+              "threshold": 0.8110119525984639,
+              "coverage": 0.4072798819478603,
+              "accepted": 828,
+              "errors": 46,
+              "selective_risk": 0.05555555555555555,
+              "selective_accuracy": 0.9444444444444444
+            },
+            "risk_upper": null
+          },
+          "0.1": {
+            "empirical": {
+              "threshold": 0.7224497450241426,
+              "coverage": 0.5514018691588785,
+              "accepted": 1121,
+              "errors": 122,
+              "selective_risk": 0.10883140053523639,
+              "selective_accuracy": 0.8911685994647636
+            },
+            "risk_upper": null
+          }
+        }
+      }
+    }
+  }
+}

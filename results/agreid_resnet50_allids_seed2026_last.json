@@ -1,0 +1,21 @@
+{
+  "retrieval": {
+    "test_A2G": {
+      "queries": 1071,
+      "counted": 1071,
+      "skipped_no_positive": 0,
+      "rank1": 0.7264239028944911,
+      "rank5": 0.8244631185807656,
+      "mAP": 0.6078208832600817
+    },
+    "test_G2A": {
+      "queries": 962,
+      "counted": 962,
+      "skipped_no_positive": 0,
+      "rank1": 0.737006237006237,
+      "rank5": 0.8295218295218295,
+      "mAP": 0.6341181818220378
+    }
+  },
+  "abstention": null
+}
